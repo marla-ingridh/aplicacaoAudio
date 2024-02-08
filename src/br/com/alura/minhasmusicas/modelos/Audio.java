@@ -1,3 +1,5 @@
+package br.com.alura.minhasmusicas.modelos;
+
 public class Audio {
     private String titulo;
     private double duracao;
@@ -25,27 +27,14 @@ public class Audio {
         return totalReproducoes;
     }
 
-    public void setTotalReproducoes(int totalReproducoes) {
-        this.totalReproducoes = totalReproducoes;
-    }
 
     public int getCurtidas() {
         return curtidas;
     }
 
-    public void setCurtidas(int curtidas) {
-        this.curtidas = curtidas;
-    }
 
-    public void getClassificacao() {
-        if(this.classificacao <= 2){
-            System.out.println("Classificação modesta.");
-        }else if(this.classificacao > 3 ){
-            System.out.println("Boa classificação");
-        }else {
-            System.out.println("Ótima classificação");
-        }
-
+    public int getClassificacao() {
+        return 0;
     }
 
     public void setClassificacao(int classificacao) {
