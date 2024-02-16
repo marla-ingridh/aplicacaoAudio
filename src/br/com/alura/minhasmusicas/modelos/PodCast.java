@@ -15,7 +15,7 @@ public class PodCast extends Audio {
 
     @java.lang.Override
     public int getClassificacao() {
-        if(this.getCurtidas() > 500 ){
+        if(this.getTotalCurtidas() > 500 ){
             return 10;
         }else {
             return 8;
