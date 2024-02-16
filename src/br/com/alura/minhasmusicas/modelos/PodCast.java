@@ -3,14 +3,23 @@ package br.com.alura.minhasmusicas.modelos;
 import br.com.alura.minhasmusicas.modelos.Audio;
 
 public class PodCast extends Audio {
-    private String autor;
+    private String apresentador;
+    private String descricao;
 
-    public String getAutor() {
-        return autor;
+    public String getApresentador() {
+        return apresentador;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setApresentador(String apresentador) {
+        this.apresentador = apresentador;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     @java.lang.Override
