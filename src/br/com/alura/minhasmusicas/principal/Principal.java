@@ -7,10 +7,11 @@ import br.com.alura.minhasmusicas.modelos.PodCast;
 public class Principal {
     public static void main(String[] args) {
 
+        //instanciando um objeto do tipo PodCast
         PodCast podcast1 = new PodCast();
         podcast1.setTitulo("Java Orientado a Objetos");
-        podcast1.setAutor("Marla Ingridh");
-       // podcast1.setDuracao(25);
+        podcast1.setApresentador("Marla Ingridh");
+        podcast1.setDescricao("Desmitificando a Orientação a Objetos.");
 
         for (int i = 0; i < 5000; i++) {
             podcast1.reproduz();
@@ -20,10 +21,11 @@ public class Principal {
         }
 
 
-        //Instanciando classe música
+        //Instanciando um objeto do tipo música
         Musica musica1 = new Musica();
         musica1.setCantor("Maria Maçal");
         musica1.setTitulo("Deixa");
+        musica1.setAlbum("Desafios...");
 
         //Gera 1000 reproduções para classificar
         for (int i = 0; i < 1000 ; i++) {
