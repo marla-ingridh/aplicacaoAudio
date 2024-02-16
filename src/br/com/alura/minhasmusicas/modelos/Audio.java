@@ -2,9 +2,8 @@ package br.com.alura.minhasmusicas.modelos;
 
 public class Audio {
     private String titulo;
-    private double duracao;
     private int totalReproducoes;
-    private int curtidas;
+    private int totalCurtidas;
     private int classificacao;
 
     public String getTitulo() {
@@ -15,41 +14,35 @@ public class Audio {
         this.titulo = titulo;
     }
 
-    public double getDuracao() {
-        return duracao;
-    }
-
-    public void setDuracao(double duracao) {
-        this.duracao = duracao;
-    }
-
     public int getTotalReproducoes() {
         return totalReproducoes;
     }
 
-
-    public int getCurtidas() {
-        return curtidas;
+    public void setTotalReproducoes(int totalReproducoes) {
+        this.totalReproducoes = totalReproducoes;
     }
 
+    public int getTotalCurtidas() {
+        return totalCurtidas;
+    }
+
+    public void setTotalCurtidas(int totalCurtidas) {
+        this.totalCurtidas = totalCurtidas;
+    }
 
     public int getClassificacao() {
-        return 0;
+        return classificacao;
     }
 
     public void setClassificacao(int classificacao) {
         this.classificacao = classificacao;
     }
 
-    public void curtir(){
-        this.curtidas ++;
-        System.out.println("Total de curtidas: "+ this.curtidas);
+    public void curte(){
+        this.totalCurtidas++;
     }
 
-    public void reproduzir(){
-        this.totalReproducoes ++;
-        System.out.println("Total de reproduções: " + this.totalReproducoes);
+    public void reproduz(){
+        this.totalReproducoes++;
     }
-
-
 }
