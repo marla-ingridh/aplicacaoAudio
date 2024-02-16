@@ -27,7 +27,7 @@ public class PodCast extends Audio {
         if(this.getTotalCurtidas() > 500 ){
             return 10;
         }else {
-            return 8;
+            return 7;
         }
     }
 }
